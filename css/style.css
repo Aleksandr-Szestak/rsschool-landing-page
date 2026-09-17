@@ -1,0 +1,24 @@
+/*#region common */
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #b6aea7;
+}
+
+/*#endregion*/
