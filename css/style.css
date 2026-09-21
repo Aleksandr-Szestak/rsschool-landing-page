@@ -239,3 +239,155 @@ section.main-slogan {
   }
 
 /*#endregion*/
+
+
+
+/*#region main-slider */
+.main-slider {
+    margin-top: 100px;
+}
+
+.main-slider-phrase h2 {
+    color:#403F3D;
+    text-align: center;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 75px */
+    margin-bottom: 35px;
+	letter-spacing: 2px;
+}
+
+.favorite {
+    color:#B0907A;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.images-descriptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+/******** Управление слайдером *********/
+
+/* инпуты делаем невидимыми */
+.images-descriptions > input {
+    display: none;
+}
+
+/* блок с полосками */
+.images-descriptions .controls {
+    width: 144px;
+    height: 4px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+/* label, привязанный к input */
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width:40px;
+    height: 4px;
+    cursor: pointer; 
+}
+
+/* сами полоски внутри label */
+.button-wrapper > span{
+    width: 40px;
+    height: 4px;    
+    border-radius: 100px;
+    background-color: #C1B6AD;
+}
+
+/* переключение слайдера */
+#slide1:checked ~ .controls .button-wrapper .button1,
+#slide2:checked ~ .controls .button-wrapper .button2,
+#slide3:checked ~ .controls .button-wrapper .button3 {
+    cursor: auto;
+    border-radius: 100px;
+    background-color: #665F55;    
+    transition: background ease-in-out .2s;
+}
+
+/******** Управление слайдером END *********/
+
+.images {
+    margin-bottom: 20px;
+}
+
+.descriprion-1 {
+    width: 480px;
+    height: 30px;
+    margin: 0 auto 16px;
+
+    color: #403F3D;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 30px */
+	letter-spacing: 0.9px;
+}
+
+
+.description-2 {
+    width: 480px;
+    height: 48px;
+    margin: 0 auto 16px;
+
+    color: #403F3D;
+    text-align: center;
+    /* font-feature-settings: 'clig' off, 'liga' off; */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+	letter-spacing: 0.6px;
+}
+
+.description-3 {
+    width: 480px;
+    height: 30px;
+    margin: 0 auto 40px;
+
+    color: #403F3D;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 30px */
+}
+
+.images-descriprions-arrows {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.images-carret {
+    padding-bottom: 30px;
+}
+
+/*#endregion*/
