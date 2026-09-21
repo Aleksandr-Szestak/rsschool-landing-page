@@ -56,7 +56,9 @@ body {
 
 .container {
     max-width: 1440px;
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
+    padding: 20px 40px 0 40px;
+
     margin: 0 auto;
 	/* background: yellow; */
 	background: var(--text-inverse);
@@ -134,5 +136,106 @@ body {
 	line-height: 150%;
 	color: var(--text-primary);
 }
+
+/*#endregion*/
+
+
+
+/*#region main-slogan */
+
+section.main-slogan {
+    width: 1360px;
+    height: 644px;
+    background: url('../assets/img-hero.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.main-slogan-inner {
+    padding: 100px;
+    display: flex;
+}
+
+.main-slogan-inner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main-slogan-phrase h1 {
+    /* color: #E1D4C9; */
+    width: 530px;
+    height: 228px;
+
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-style: normal;
+	font-size: 72px;
+	line-height: 105%;
+	color: var(--text-inverse);
+	letter-spacing: 2.5px;
+}
+
+.enjoy {
+    color: var(--text-accent);
+    font-family: Inter;
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 105%; /* 75.6px */
+}
+
+.main-slogan-description {
+    width: 530px;
+    height: 72px;
+    color: #E1D4C9;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.main-slogan-button {
+    width: 530px;
+    height: 64px;
+}
+
+.menu-button {
+    appearance: none;
+    border: 0;
+    border-radius: 100px;
+    background: #E1D4C9;
+    padding: 20px 78px;
+    /* padding: 20px 64px; */
+    min-width: 200px;
+    height: 64px;
+
+    color: #403F3D;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+
+    cursor: pointer; 
+  }
+
+  .menu-button-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    /* width: 44px;
+    height: 24px;
+    padding: 20px 78px; */
+  }
+
+  .menu-button-inner img {
+    display: none;
+    /* opacity: 0; */
+  }
 
 /*#endregion*/
